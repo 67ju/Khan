@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AfghanConnect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Login Page -->
+<div id="loginPage">
+    <h2 class="A">AfghanConnect Login</h2>
+    <input id="usernameInput" placeholder="Enter username">
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- Chat Page -->
+<div id="chatPage" style="display:none;">
+    <h2>AfghanConnect Chat</h2>
+    <div id="chat"></div>
+    <div id="input-bar">
+        <textarea id="msg" placeholder="Type message"></textarea>
+        <button onclick="send()">Send</button>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
